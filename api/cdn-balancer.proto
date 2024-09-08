@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option go_package = "example.com/cdn-balancer/internal.pb";
+
+service Balancer {
+    rpc Echo (EchoRequest) returns (EchoResponse) {}
+
+    rpc GetLink (GetLinkRequest) returns (GetLinkResponse) {}
+}
+  
+message EchoRequest {}
+  
+message EchoResponse {}
+
+message GetLinkRequest {
+    string uri = 1;
+}
+
+message GetLinkResponse {
+    string uri = 1;
+    string error = 2;
+}

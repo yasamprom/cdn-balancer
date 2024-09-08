@@ -1,0 +1,9 @@
+
+# Доля запросов, направляемых на оригинальный источник
+originalSourceRoutePercent: 0.1
+
+# Переменная с именем хоста cdn
+cdnHostEnv: "CDN_HOST"
+
+# Default хост cdn
+cdnSourceHost: "some.default.host"
